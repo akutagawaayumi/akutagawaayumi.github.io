@@ -33,7 +33,7 @@ header i,
     content: 'text here';
 }
 
-#lifeOf li:nth-child(4) i::after {
+#lifeOf li:nth-child(5) i::after {
     content: 'バブが家に来た';
 }
 
