@@ -40,3 +40,8 @@ header i,
 #lifeOf li:nth-child(8) i::after {
     content: '習字を習い始める';
 }
+
+
+#lifeOf li:nth-child(10) i::after {
+    content: 'くじに当たって家族でロサンゼルスに行く';
+}
