@@ -65,6 +65,10 @@ header i,
     content: 'はなが家に来た';
 }
 
+#lifeOf li:nth-child(15) i::after {
+    content: '剣道個人で県大会に出場';
+}
+
 #lifeOf li:nth-child(16) i::after {
     content: '厚狭高校 文化英語コースに入学';
 }
