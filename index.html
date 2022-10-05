@@ -12,6 +12,16 @@
 
     <link rel="stylesheet" href="age.css" />
     <link rel="stylesheet" href="lifeof.css" />
+
+    <style>
+        #readme {
+            padding: 2vw;
+            font-size: 2vw;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: monospace;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,6 +36,15 @@
     </header>
 
     <ul id="lifeOf"></ul>
+
+    <footer id="readme"></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#readme").load("readme.txt");
+        })
+    </script>
 
     <script src="age.js"></script>
     <script src="lifeof.js"></script>
