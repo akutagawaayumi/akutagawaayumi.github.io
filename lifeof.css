@@ -35,12 +35,12 @@ header i,
 
 #lifeOf li:nth-child(2) i::after {
     content: 'にこにこぷんに出演';
-    font-size: 70%;
+    font-size: 180%;
 }
 
 #lifeOf li:nth-child(5) i::after {
     content: 'バブが家に来た';
-    font-size: 150%;
+    font-size: 160%;
 }
 
 #lifeOf li:nth-child(7) i::after {
@@ -66,7 +66,7 @@ header i,
 
 #lifeOf li:nth-child(14) i::after {
     content: 'はなが家に来た';
-    font-size: 150%;
+    font-size: 160%;
 }
 
 #lifeOf li:nth-child(15) i::after {
@@ -116,6 +116,7 @@ header i,
 
 #lifeOf li:nth-child(32) i::after {
     content: 'abiを始める';
+    font-size: 145%;
 }
 
 #lifeOf li:nth-child(34) i::after {
