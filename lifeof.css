@@ -1,0 +1,39 @@
+header #age {
+    font-family: monospace;
+}
+
+header b {
+    font-family: serif;
+}
+
+header i,
+#lifeOf li i {
+    font-family: serif;
+}
+
+#lifeOf li i::after {
+    font-family: sans-serif;
+}
+
+#lifeOf {
+    column-rule: 1px dotted #000;
+}
+
+#lifeOf li u {
+    text-decoration: none;
+    border: solid 1px #000;
+    border-radius: 2rem;
+    padding: 0.125rem 0.25rem;
+}
+
+#lifeOf li:nth-child(0) i::after {
+    content: 'text here';
+}
+
+#lifeOf li:nth-child(4) i::after {
+    content: 'バブが家に来た';
+}
+
+#lifeOf li:nth-child(8) i::after {
+    content: '習字を習い始める';
+}
