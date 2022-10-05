@@ -37,15 +37,15 @@ header i,
     content: 'バブが家に来た';
 }
 
-#lifeOf li:nth-child(6) i::after {
+#lifeOf li:nth-child(7) i::after {
     content: '井関小学校に入学';
 }
 
-#lifeOf li:nth-child(7) i::after {
+#lifeOf li:nth-child(8) i::after {
     content: '新しい家が建った';
 }
 
-#lifeOf li:nth-child(8) i::after {
+#lifeOf li:nth-child(9) i::after {
     content: '習字を習い始める';
 }
 
