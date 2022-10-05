@@ -26,14 +26,7 @@ header i,
     padding: 0.125rem 0.25rem;
 }
 
-#lifeOf li:nth-child(0) i::after {
-    content: 'text here';
-}
 
-#lifeOf li:nth-child(4) i::after {
-    content: 'バブが家に来た';
-}
-
-#lifeOf li:nth-child(8) i::after {
-    content: '習字を習い始める';
-}
+#lifeOf li:nth-child(0) i::after { content: 'text here'; }
+#lifeOf li:nth-child(4) i::after { content: 'バブが家に来た'; }
+#lifeOf li:nth-child(8) i::after { content: '習字を習い始める'; }
