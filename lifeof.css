@@ -85,6 +85,18 @@ header i,
     content: '株式会社DRIVEに転職';
 }
 
-#lifeOf li:nth-child() i::after {
-    content: 'text here';
+#lifeOf li:nth-child(28) i::after {
+    content: '東淀川区東中島に引っ越し';
+}
+
+#lifeOf li:nth-child(30) i::after {
+    content: '東淀川区下新庄に引っ越し';
+}
+
+#lifeOf li:nth-child(32) i::after {
+    content: 'ペフでささじまさんに出会う';
+}
+
+#lifeOf li:nth-child(34) i::after {
+    content: '住之江区粉浜に引っ越し';
 }
