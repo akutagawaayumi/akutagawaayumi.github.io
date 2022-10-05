@@ -73,7 +73,7 @@ header i,
     content: 'ニュージーランドに語学留学';
 }
 
-#lifeOf li:nth-child(19) i::after {
+#lifeOf li:nth-child(18) i::after {
     content: 'クイーンズランド工科大学に入学';
 }
 
@@ -97,7 +97,7 @@ header i,
     content: '東淀川区東中島に引っ越し';
 }
 
-#lifeOf li:nth-child(30) i::after {
+#lifeOf li:nth-child(31) i::after {
     content: '東淀川区下新庄に引っ越し';
 }
 
