@@ -53,11 +53,11 @@ header i,
     content: 'くじに当たって家族でロサンゼルスに行く';
 }
 
-#lifeOf li:nth-child(12) i::after {
+#lifeOf li:nth-child(13) i::after {
     content: '阿知須中学校に入学';
 }
 
-#lifeOf li:nth-child(13) i::after {
+#lifeOf li:nth-child(14) i::after {
     content: 'はなが家に来た';
 }
 
