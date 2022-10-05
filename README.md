@@ -23,4 +23,6 @@ header i,
 
 #lifeOf li i::after {
     font-family: 一言コメントのフォント;
+    color: 文字の色;
+    font-size: 文字の大きさ;
 }

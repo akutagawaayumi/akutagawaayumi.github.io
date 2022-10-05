@@ -103,7 +103,6 @@ header #age {
 #lifeOf li i::after {
     display: block;
     margin-top: 0.5rem;
-    font-size: 125%;
     clear: both;
     font-style: normal;
     font-weight: 400;
