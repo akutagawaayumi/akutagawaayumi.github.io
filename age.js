@@ -1,5 +1,4 @@
-birthday = "1987-10-06 00:00:00"
-
+birthday = "1987-10-06T00:00:00"
 
 function counter() {
     age.textContent = `${((new Date() - new Date(birthday)) / 31557600000 ).toFixed(9)}`
