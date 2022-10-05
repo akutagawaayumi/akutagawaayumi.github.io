@@ -1,4 +1,4 @@
-birthday = "1987-10-06 00:00"
+birthday = "1987-10-06 00:00:00"
 
 
 function counter() {
