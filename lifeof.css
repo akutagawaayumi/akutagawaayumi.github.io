@@ -37,6 +37,11 @@ header i,
     content: 'バブが家に来た';
 }
 
+
+#lifeOf li:nth-child(6) i::after {
+    content: '井関小学校に入学';
+}
+
 #lifeOf li:nth-child(8) i::after {
     content: '習字を習い始める';
 }
@@ -44,4 +49,32 @@ header i,
 
 #lifeOf li:nth-child(10) i::after {
     content: 'くじに当たって家族でロサンゼルスに行く';
+}
+
+#lifeOf li:nth-child(12) i::after {
+    content: '阿知須中学校に入学';
+}
+
+#lifeOf li:nth-child(15) i::after {
+    content: '厚狭高校に入学';
+}
+
+#lifeOf li:nth-child(15) i::after {
+    content: 'バドミントンを習い始める';
+}
+
+#lifeOf li:nth-child(19) i::after {
+    content: 'オーストラリア ブリスベンに行く';
+}
+
+#lifeOf li:nth-child(19) i::after {
+    content: 'クイーンズランド工科大学に入学';
+}
+
+#lifeOf li:nth-child(22) i::after {
+    content: '大阪に行く';
+}
+
+#lifeOf li:nth-child(22) i::after {
+    content: '創造社デザイン専門学校に入学';
 }
