@@ -78,7 +78,7 @@ header i,
 }
 
 #lifeOf li:nth-child(22) i::after {
-    content: '大阪に行く/n創造社デザイン専門学校に入学';
+    content: '大阪に行く<br>創造社デザイン専門学校に入学';
 }
 
 #lifeOf li:nth-child(24) i::after {
@@ -97,9 +97,7 @@ header i,
     content: '東淀川区下新庄に引っ越し';
 }
 
-#lifeOf li:nth-child(32) i::after {
-    content: 'ペフでささじまさんに出会う';
-}
+
 
 #lifeOf li:nth-child(34) i::after {
     content: '住之江区粉浜に引っ越し';
