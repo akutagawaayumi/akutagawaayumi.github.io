@@ -61,19 +61,19 @@ header i,
     content: 'はなが家に来た';
 }
 
-#lifeOf li:nth-child(15) i::after {
+#lifeOf li:nth-child(16) i::after {
     content: '厚狭高校 文化英語コースに入学';
 }
 
-#lifeOf li:nth-child(16) i::after {
+#lifeOf li:nth-child(17) i::after {
     content: 'バドミントンをお母さんと習い始める';
 }
 
-#lifeOf li:nth-child(17) i::after {
+#lifeOf li:nth-child(18) i::after {
     content: 'ニュージーランドに語学留学';
 }
 
-#lifeOf li:nth-child(18) i::after {
+#lifeOf li:nth-child(19) i::after {
     content: 'クイーンズランド工科大学に入学';
 }
 
