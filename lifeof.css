@@ -14,7 +14,7 @@ header i,
 #lifeOf li i::after {
     font-family: sans-serif;
     color:#000;
-    font-size: 125%;
+   
 }
 
 #lifeOf {
@@ -35,10 +35,12 @@ header i,
 
 #lifeOf li:nth-child(2) i::after {
     content: 'にこにこぷんに出演';
+    font-size: 70%;
 }
 
 #lifeOf li:nth-child(5) i::after {
     content: 'バブが家に来た';
+    font-size: 150%;
 }
 
 #lifeOf li:nth-child(7) i::after {
@@ -55,6 +57,7 @@ header i,
 
 #lifeOf li:nth-child(10) i::after {
     content: 'くじに当たって家族でロサンゼルスに行く';
+    font-size: 200%;
 }
 
 #lifeOf li:nth-child(13) i::after {
@@ -63,6 +66,7 @@ header i,
 
 #lifeOf li:nth-child(14) i::after {
     content: 'はなが家に来た';
+    font-size: 150%;
 }
 
 #lifeOf li:nth-child(15) i::after {
@@ -87,6 +91,7 @@ header i,
 
 #lifeOf li:nth-child(21) i::after {
     content: 'バブが死んだ';
+    font-size: 50%;
 }
 
 #lifeOf li:nth-child(22) i::after {
