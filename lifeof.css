@@ -11,13 +11,9 @@ header i,
     font-family: serif;
 }
 
-@font-face {
-    font-family: "kouzansousho";
-    src: url("https://creative-community.space/coding/fontbook/family/kouzansousho.otf");
-}
 
 #lifeOf li i::after {
-    font-family: "kouzansousho";
+    font-family: "Toppan Bunkyu Gothic","凸版文久ゴシック";
     color: #000;
     font-size: 120%;
 }
