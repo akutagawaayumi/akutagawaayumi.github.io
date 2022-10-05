@@ -69,6 +69,10 @@ header i,
     content: 'バドミントンをお母さんと習い始める';
 }
 
+#lifeOf li:nth-child(17) i::after {
+    content: 'ニュージーランドに語学留学';
+}
+
 #lifeOf li:nth-child(19) i::after {
     content: 'クイーンズランド工科大学に入学';
 }
