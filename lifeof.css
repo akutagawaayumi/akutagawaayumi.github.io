@@ -77,6 +77,10 @@ header i,
     content: 'クイーンズランド工科大学に入学';
 }
 
+#lifeOf li:nth-child(21) i::after {
+    content: 'バブが死んだ';
+}
+
 #lifeOf li:nth-child(22) i::after {
     content: '大阪へ引っ越し、創造社デザイン専門学校に入学';
 }
@@ -97,7 +101,9 @@ header i,
     content: '東淀川区下新庄に引っ越し';
 }
 
-
+#lifeOf li:nth-child(32) i::after {
+    content: 'abiを始める';
+}
 
 #lifeOf li:nth-child(34) i::after {
     content: '住之江区粉浜に引っ越し';
