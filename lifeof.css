@@ -12,7 +12,7 @@ header i,
 }
 
 #lifeOf li i::after {
-    font-family: sans-serif;
+    font-family: serif;
     color:#000;
    
 }
