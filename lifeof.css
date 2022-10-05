@@ -13,7 +13,7 @@ header i,
 
 
 #lifeOf li i::after {
-    font-family: "Toppan Bunkyu Gothic","凸版文久ゴシック";
+    font-family: "Toppan Bunkyu Gothic","凸版文久ゴシック", serif;
     color: #000;
     font-size: 120%;
 }
