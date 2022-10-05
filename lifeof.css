@@ -11,8 +11,13 @@ header i,
     font-family: serif;
 }
 
+@font-face {
+    font-family: "kouzansousho";
+    src: url("https://creative-community.space/coding/fontbook/family/kouzansousho.otf");
+}
+
 #lifeOf li i::after {
-    font-family: serif;
+    font-family: "kouzansousho";
     color: #000;
     font-size: 120%;
 }
