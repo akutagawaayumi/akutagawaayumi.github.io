@@ -2,11 +2,13 @@ ityped.init(document.querySelector("#ityped"), {
   strings: [
     'Count Down'
   ],
-  startDelay: 1, //アニメーション開始までの遅延、大きいほど遅れる
-  typeSpeed: 100, //表示させるスピード、大きいほどゆっくり
-  loop: true, //ループ
-  backDelay: 1000, //戻る時間指定
-  backSpeed: 50, //戻るスピード
-  showCursor: true, //カーソル表示
-  cursorChar: "|", //カーソルとして表示するテキスト
+  typeSpeed:  2023,            //タイピングのスピード
+  startDelay: 100,             //タイピングが始まるまでの時間
+  loop: true,                  //繰り返しの有無（ true か false で指定）
+  showCursor: false,           //カーソル表示の有無（ true か false で指定）
+  cursorChar: "|",             //カーソルとして表示させる文字を" "内に指定
+  disableBackTyping: false,    //文字を消していく動作の有無（trueかfalseで指定）
+  backSpeed:  50,              //文字が消えていくときのスピード
+  backDelay:  500,             //タイピングが終わって消え始めるまでの時間
+  placeholder: false,          //プレースホルダーでのアニメーション（trueかfalseで指定）
 })
