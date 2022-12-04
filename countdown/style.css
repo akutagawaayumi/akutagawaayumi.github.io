@@ -2,6 +2,18 @@ html {
   height: -webkit-fill-available;
 }
 
+.countdown .targetTime::before {
+  font-size: 125%;
+}
+
+.marriage .targetTime::before {
+  content: '入籍';
+}
+
+.wedding .targetTime::before {
+  content: '挙式';
+}
+
 body,
 .countdown {
   padding: 0;
@@ -44,7 +56,8 @@ body,
 
 .countdown h1,
 .countdown h1 span::before,
-.countdown h1 span::after {
+.countdown h1 span::after,
+.countdown .targetTime::before {
   position: absolute;
   top: 50%;
   left: 50%;
