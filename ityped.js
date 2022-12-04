@@ -1,9 +1,6 @@
 ityped.init(document.querySelector("#ityped"), {
   strings: [
-    'Hello こんにちは',
-    'Welcome to creative-community.space',
-    '画面をタッチするとコンテンツが表示されます',
-    'Touch The Screen to Enter Here'
+    'Count Down'
   ],
   startDelay: 100, //アニメーション開始までの遅延、大きいほど遅れる
   typeSpeed: 100, //表示させるスピード、大きいほどゆっくり
