@@ -2,19 +2,6 @@ html {
   height: -webkit-fill-available;
 }
 
-.countdown .targetTime::before {
-  margin-top: 2.5vh;
-  font-size: 200%;
-}
-
-.marriage .targetTime::before {
-  content: '入籍';
-}
-
-.wedding .targetTime::before {
-  content: '挙式';
-}
-
 body,
 .countdown {
   padding: 0;
@@ -34,6 +21,7 @@ body,
 }
 
 .countdown .targetTime,
+.countdown .memo,
 .countdown h1 span {
   text-align: center;
   font-family: 'DM Mono', monospace;
@@ -43,6 +31,14 @@ body,
   position: relative;
   top: 5vh;
   font-size: 90%;
+  font-weight: 500;
+  font-stretch: extra-expanded;
+}
+
+.countdown .memo {
+  position: absolute;
+  bottom: 5vh;
+  font-size: 200%;
   font-weight: 500;
   font-stretch: extra-expanded;
 }
@@ -57,8 +53,7 @@ body,
 
 .countdown h1,
 .countdown h1 span::before,
-.countdown h1 span::after,
-.countdown .targetTime::before {
+.countdown h1 span::after {
   position: absolute;
   top: 50%;
   left: 50%;
