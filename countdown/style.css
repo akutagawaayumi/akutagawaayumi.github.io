@@ -8,6 +8,11 @@ body,
   margin: 0;
 }
 
+hr {
+  border: none;
+  margin: 20vh 0;
+}
+
 .countdown {
   min-height: 100vh;
   max-height: -webkit-fill-available;
@@ -17,6 +22,7 @@ body,
 .countdown h1 span::after,
 .countdown .memo {
   font-family: -apple-system, 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
+  font-weight: 300;
 }
 
 .countdown .targetTime,
