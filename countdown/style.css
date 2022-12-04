@@ -3,13 +3,13 @@ html {
 }
 
 .countdown h1 span::before,
-.countdown h1 span::after {
+.countdown h1 span::after,
+.countdown .memo {
   font-family: -apple-system, 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
 }
 
 .countdown .targetTime,
-.countdown h1 span,
-.countdown .memo {
+.countdown h1 span {
   font-family: 'DM Mono', monospace;
 }
 
