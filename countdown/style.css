@@ -3,7 +3,7 @@ html {
 }
 
 .countdown .targetTime::before {
-  font-size: 125%;
+  font-size: 200%;
 }
 
 .marriage .targetTime::before {
