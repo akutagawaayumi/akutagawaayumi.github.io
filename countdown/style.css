@@ -2,6 +2,17 @@ html {
   height: -webkit-fill-available;
 }
 
+.countdown h1 span::before,
+.countdown h1 span::after,
+.countdown .memo {
+  font-family: -apple-system, 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
+}
+
+.countdown .targetTime,
+.countdown h1 span {
+  font-family: 'DM Mono', monospace;
+}
+
 body,
 .countdown {
   padding: 0;
@@ -23,18 +34,6 @@ hr {
   .countdown {
     font-size: 2.5vw;
   }
-}
-
-.countdown h1 span::before,
-.countdown h1 span::after,
-.countdown .memo {
-  font-family: -apple-system, 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
-  font-weight: 300;
-}
-
-.countdown .targetTime,
-.countdown h1 span {
-  font-family: 'DM Mono', monospace;
 }
 
 .countdown .targetTime,
