@@ -1,6 +1,6 @@
 ityped.init(document.querySelector("#ityped"), {
   strings: [
-    'Count Down'
+    'Countdown'
   ],
   typeSpeed:  400,            //タイピングのスピード
   startDelay: 100,             //タイピングが始まるまでの時間
