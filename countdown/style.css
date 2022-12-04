@@ -41,6 +41,7 @@ body,
   font-size: 200%;
   font-weight: 500;
   font-stretch: extra-expanded;
+  width: 100%;
 }
 
 .countdown .targetTime::after {
