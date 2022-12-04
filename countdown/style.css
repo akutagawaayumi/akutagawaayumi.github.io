@@ -14,8 +14,15 @@ hr {
 }
 
 .countdown {
+  font-size: 1rem;
   min-height: 100vh;
   max-height: -webkit-fill-available;
+}
+
+@media screen and (min-width: 550px) {
+  .countdown {
+    font-size: 2.5vw;
+  }
 }
 
 .countdown h1 span::before,
@@ -57,7 +64,7 @@ hr {
 .countdown .memo {
   position: absolute;
   bottom: 5vh;
-  font-size: 200%;
+  font-size: 150%;
   font-weight: 500;
   font-stretch: extra-expanded;
   width: 100%;
