@@ -3,6 +3,7 @@ html {
 }
 
 .countdown .targetTime::before {
+  top: 2.5vh;
   font-size: 200%;
 }
 
