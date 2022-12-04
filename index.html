@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  
+
   <title>a‿a</title>
   <meta name="description" content="Ayumi Akutagawa">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="age.css" />
   <link rel="stylesheet" href="lifeof.css" />
-  
+
   <style>
   #readme {
     padding: 2vw;
@@ -24,18 +24,26 @@
     word-wrap: break-word;
     font-family: monospace;
   }
-  
+
   #links {
-    min-height: 2.5rem;
+    font-size: 1.25rem;
+    font-family: 'DM Mono', monospace;
     margin: 1rem 0.5rem 0.5rem;
   }
-  
-  #ityped {
-    color: #000;
+
+  .countdown {
+    color: #fff;
+    background: #aaa;
     display: block;
     float: left;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    height: 1.5rem;
+    width: 7rem;
     text-decoration: none;
+  }
+
+  .countdown:hover {
+    filter: invert();
   }
   </style>
 </head>
@@ -50,16 +58,31 @@
     </i>
     <h1 id="age"></h1>
   </header>
-  
+
   <ul id="lifeOf"></ul>
-  
-  <p id="links"><a id="ityped" href="/countdown/">Countdown</a></p>
-  
+
+  <p id="links"><a class="countdown" href="/countdown/"></a></p>
+
   <script src="age.js"></script>
   <script src="lifeof.js"></script>
   <script src="https://unpkg.com/ityped@1.0.3"></script>
-  <script src="ityped.js"></script>
-  
+  <script>
+  ityped.init(document.querySelector(".countdown"), {
+    strings: [
+      'Countdown'
+    ],
+    typeSpeed:  300,            //タイピングのスピード
+    startDelay: 300,             //タイピングが始まるまでの時間
+    loop: true,                  //繰り返しの有無（ true か false で指定）
+    showCursor: false,           //カーソル表示の有無（ true か false で指定）
+    cursorChar: "|",             //カーソルとして表示させる文字を" "内に指定
+    disableBackTyping: false,    //文字を消していく動作の有無（ true か false で指定）
+    backSpeed:  300,              //文字が消えていくときのスピード
+    backDelay:  300,             //タイピングが終わって消え始めるまでの時間
+    placeholder: false,          //プレースホルダーでのアニメーション（ true か false で指定）
+  })
+  </script>
+
 </body>
 
 </html>
