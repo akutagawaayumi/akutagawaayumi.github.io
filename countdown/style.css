@@ -30,7 +30,7 @@ hr {
   max-height: -webkit-fill-available;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (max-width: 550px) {
   .countdown {
     font-size: 2.5vw;
   }
