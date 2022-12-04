@@ -13,18 +13,31 @@ body,
   max-height: -webkit-fill-available;
 }
 
-.countdown,
+.countdown h1 span::before,
+.countdown h1 span::after,
+.countdown .memo {
+  font-family: -apple-system, 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
+}
+
+.countdown .targetTime,
 .countdown h1 span {
-  position: relative;
-  box-sizing: border-box;
-  padding: 1rem 2.5%;
+  font-family: 'DM Mono', monospace;
 }
 
 .countdown .targetTime,
 .countdown .memo,
 .countdown h1 span {
   text-align: center;
-  font-family: 'DM Mono', monospace;
+}
+
+.countdown,
+.countdown h1 span {
+  position: relative;
+}
+
+.countdown h1 span {
+  box-sizing: border-box;
+  padding: 1rem 2.5%;
 }
 
 .countdown .targetTime {
@@ -81,7 +94,6 @@ body,
   font-style: italic;
   font-weight: 200;
   margin-top: -2rem;
-  font-family: -apple-system, 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
 }
 
 .countdown h1 .day::before {
@@ -108,7 +120,6 @@ body,
   font-size: 45%;
   font-weight: 300;
   margin-top: 2rem;
-  font-family: -apple-system, 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
 }
 
 .countdown h1 .day::after {
