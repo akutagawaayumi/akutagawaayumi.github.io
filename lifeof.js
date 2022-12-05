@@ -18,7 +18,8 @@ for (let yourage = 1; yourage < today - year; yourage++) {
     thisyear.innerHTML = year + yourage;
 
     const thisage = document.createElement("i");
-    thisage.innerHTML = yourage + " years old";
+    const tobe = yourage + 1;
+    thisage.innerHTML = yourage + " - " + tobe + " years old";
 
     you.appendChild(the);
     the.appendChild(thisyear);
