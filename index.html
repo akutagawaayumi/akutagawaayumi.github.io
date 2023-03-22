@@ -17,6 +17,18 @@
   <link rel="stylesheet" href="lifeof.css" />
 
   <style>
+
+  :root {
+    --Age-Font-Size: 10vw;
+    --Age-Font: 'DM Mono', monospace;
+    --Name-Font: "Papyrus", cursive;
+    --Date-Font: 'Times New Roman', serif;
+    --lifeOf-Font: -apple-system, 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
+    --lifeOf-Font-Size: 0.75rem;
+    --lifeOf-Padding: 0.5rem;
+    --lifeOf-list: "a‿a" inside;
+  }
+
   #readme {
     padding: 2vw;
     font-size: 2vw;
@@ -46,7 +58,7 @@
 </head>
 
 <body>
-  <header>
+  <main id="yourage">
     <b id="name"></b>
     <i>
       <span id="day"></span>
@@ -54,7 +66,7 @@
       <span id="year"></span>
     </i>
     <h1 id="age"></h1>
-  </header>
+  </main>
 
   <ul id="lifeOf"></ul>
 

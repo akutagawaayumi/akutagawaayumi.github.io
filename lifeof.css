@@ -1,125 +1,100 @@
-header #age {
-    font-family: 'DM Mono', monospace;
-}
-
-header #name {
-    font-family: "Papyrus";
-}
-
-header i,
-#lifeOf li i {
-    font-family: serif;
-}
-
-
-#lifeOf li i::after {
+#lifeOf li b::after {
     font-family: "Toppan Bunkyu Gothic","凸版文久ゴシック", serif;
     color: #000;
     font-size: 120%;
 }
 
-#lifeOf {
-    column-rule: 1px dotted #000;
-}
 
-#lifeOf li u {
-    text-decoration: none;
-    border: solid 1px #000;
-    border-radius: 2rem;
-    padding: 0.125rem 0.25rem;
-}
-
-
-#lifeOf li:nth-child(0) i::after {
+#lifeOf li:nth-child(0) b::after {
     content: 'text here';
 }
 
-#lifeOf li:nth-child(2) i::after {
+#lifeOf li:nth-child(2) b::after {
     content: 'にこにこぷんに出演';
     font-size: 180%;
 }
 
-#lifeOf li:nth-child(5) i::after {
+#lifeOf li:nth-child(5) b::after {
     content: 'バブが家に来た';
     font-size: 160%;
 }
 
-#lifeOf li:nth-child(7) i::after {
+#lifeOf li:nth-child(7) b::after {
     content: '井関小学校に入学';
 }
 
-#lifeOf li:nth-child(8) i::after {
+#lifeOf li:nth-child(8) b::after {
     content: '新しい家が建った';
 }
 
-#lifeOf li:nth-child(9) i::after {
+#lifeOf li:nth-child(9) b::after {
     content: '習字を習い始める';
 }
 
-#lifeOf li:nth-child(10) i::after {
+#lifeOf li:nth-child(10) b::after {
     content: 'くじに当たって家族でロサンゼルスに行く';
     font-size: 200%;
 }
 
-#lifeOf li:nth-child(13) i::after {
+#lifeOf li:nth-child(13) b::after {
     content: '阿知須中学校に入学';
 }
 
-#lifeOf li:nth-child(14) i::after {
+#lifeOf li:nth-child(14) b::after {
     content: 'はなが家に来た';
     font-size: 160%;
 }
 
-#lifeOf li:nth-child(15) i::after {
+#lifeOf li:nth-child(15) b::after {
     content: '剣道個人で県大会に出場';
 }
 
-#lifeOf li:nth-child(16) i::after {
+#lifeOf li:nth-child(16) b::after {
     content: '厚狭高校 文化英語コースに入学';
 }
 
-#lifeOf li:nth-child(17) i::after {
+#lifeOf li:nth-child(17) b::after {
     content: 'バドミントンをお母さんと習い始める';
 }
 
-#lifeOf li:nth-child(18) i::after {
+#lifeOf li:nth-child(18) b::after {
     content: 'ニュージーランドに語学留学';
 }
 
-#lifeOf li:nth-child(19) i::after {
+#lifeOf li:nth-child(19) b::after {
     content: 'クイーンズランド工科大学に入学';
 }
 
-#lifeOf li:nth-child(21) i::after {
+#lifeOf li:nth-child(21) b::after {
     content: 'バブが死んだ';
     font-size: 50%;
 }
 
-#lifeOf li:nth-child(22) i::after {
+#lifeOf li:nth-child(22) b::after {
     content: '大阪へ引っ越し、創造社デザイン専門学校に入学';
 }
 
-#lifeOf li:nth-child(24) i::after {
+#lifeOf li:nth-child(24) b::after {
     content: '太田デザイン事務所に就職';
 }
 
-#lifeOf li:nth-child(26) i::after {
+#lifeOf li:nth-child(26) b::after {
     content: '株式会社DRIVEに転職';
 }
 
-#lifeOf li:nth-child(28) i::after {
+#lifeOf li:nth-child(28) b::after {
     content: '東淀川区東中島に引っ越し';
 }
 
-#lifeOf li:nth-child(31) i::after {
+#lifeOf li:nth-child(31) b::after {
     content: '東淀川区下新庄に引っ越し';
 }
 
-#lifeOf li:nth-child(32) i::after {
+#lifeOf li:nth-child(32) b::after {
     content: 'abiを始める';
     font-size: 145%;
 }
 
-#lifeOf li:nth-child(34) i::after {
+#lifeOf li:nth-child(34) b::after {
     content: '住之江区粉浜に引っ越し';
 }

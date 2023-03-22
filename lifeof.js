@@ -1,34 +1,40 @@
 yourname = "Ayumi Akutagawa";
-
 day = 06;
 month = "OCT";
 year = 1987;
-
+birthday = "1987-10-06T00:00:00"
 
 let now = new Date();
 let today = now.getFullYear();
 
-const lifeOf = document.getElementById('lifeOf');
-const you = document.createDocumentFragment();
+const yourage = document.querySelector("#age")
+const lifeOf = document.querySelector('#lifeOf');
 
-for (let yourage = 1; yourage < today - year; yourage++) {
-    const the = document.createElement('li');
-
-    const thisyear = document.createElement('u');
-    thisyear.innerHTML = year + yourage;
-
-    const thisage = document.createElement("i");
-    const tobe = yourage + 1;
-    thisage.innerHTML = yourage + " - " + tobe + " years old";
-
-    you.appendChild(the);
-    the.appendChild(thisyear);
-    the.appendChild(thisage);
+function counter() {
+  yourage.textContent = `${((new Date() - new Date(birthday)) / 31557600000).toFixed(9)}`
+}
+function start() {
+  setTimeout(() => { counter(); requestAnimationFrame(start); }, 1000 / 30);
 }
 
-lifeOf.appendChild(you);
+start();
 
-document.getElementById("name").innerHTML = yourname
-document.getElementById("day").innerHTML = day
-document.getElementById("month").innerHTML = month
-document.getElementById("year").innerHTML = year
+for (let i = 1; i <= today - year; i++) {
+  const ageof = document.createElement('li');
+
+  const thisyear = document.createElement('u');
+  thisyear.innerHTML = year + i;
+
+
+  const thisage = document.createElement("b");
+  thisage.innerHTML = i-1 + " - " + i + " years old";
+
+  lifeOf.appendChild(ageof);
+  ageof.appendChild(thisyear);
+  ageof.appendChild(thisage);
+}
+
+document.querySelector("#day").innerHTML = day
+document.querySelector("#month").innerHTML = month
+document.querySelector("#year").innerHTML = year
+document.querySelector("#name").innerHTML = yourname
