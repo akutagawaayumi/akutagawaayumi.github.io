@@ -1,40 +1,59 @@
-yourname = "Ayumi Akutagawa";
-day = 06;
-month = "OCT";
+name = "Ayumi Akutagawa";
 year = 1987;
-birthday = "1987-10-06T00:00:00"
+month = "10";
+mstand = "OCT";
+date = "06";
+time = "00:00:00";
+
+const birthday = `${year}-${month}-${date}T${time}`;
 
 let now = new Date();
 let today = now.getFullYear();
 
-const yourage = document.querySelector("#age")
+const age = document.querySelector("#age")
 const lifeOf = document.querySelector('#lifeOf');
 
-function counter() {
-  yourage.textContent = `${((new Date() - new Date(birthday)) / 31557600000).toFixed(9)}`
-}
-function start() {
-  setTimeout(() => { counter(); requestAnimationFrame(start); }, 1000 / 30);
-}
+document.addEventListener('readystatechange', event => {
 
-start();
+  if (event.target.readyState === 'loading') {
+    // 文書の読み込み中に実行する
+  }
 
-for (let i = 1; i <= today - year; i++) {
-  const ageof = document.createElement('li');
+  else if (event.target.readyState === 'interactive') {
+    document.querySelector("#day").innerHTML = date
+    document.querySelector("#month").innerHTML = mstand
+    document.querySelector("#year").innerHTML = year
+    document.querySelector("#name").innerHTML = name
 
-  const thisyear = document.createElement('u');
-  thisyear.innerHTML = year + i;
+    function counter() {
+      age.textContent = `${((new Date() - new Date(birthday)) / 31557600000).toFixed(9)}`
+    }
+    
+    function start() {
+      setTimeout(() => {
+        counter(); requestAnimationFrame(start);
+      }, 1000 / 30);
+    }
+
+    start();
+  }
+
+  else if (event.target.readyState === 'complete') {
+
+    for (let i = 1; i <= today - year; i++) {
+      const ageof = document.createElement('li');
+
+      const thisyear = document.createElement('u');
+      thisyear.innerHTML = year + i;
 
 
-  const thisage = document.createElement("b");
-  thisage.innerHTML = i-1 + " - " + i + " years old";
+      const thisage = document.createElement("b");
+      thisage.innerHTML = i-1 + " - " + i + " years old";
 
-  lifeOf.appendChild(ageof);
-  ageof.appendChild(thisyear);
-  ageof.appendChild(thisage);
-}
+      lifeOf.appendChild(ageof);
+      ageof.appendChild(thisyear);
+      ageof.appendChild(thisage);
+    }
 
-document.querySelector("#day").innerHTML = day
-document.querySelector("#month").innerHTML = month
-document.querySelector("#year").innerHTML = year
-document.querySelector("#name").innerHTML = yourname
+  }
+});
