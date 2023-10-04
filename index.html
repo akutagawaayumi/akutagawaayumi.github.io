@@ -2,121 +2,56 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
 
+  <!--og:meta-->
+  <meta content="website" property="og:type">
   <title>a‿a</title>
-  <meta name="description" content="Ayumi Akutagawa">
+  <meta content="a‿a" property="og:title">
+  <meta content="date of birth 06 OCT 1987" name="description">
+  <meta content="date of birth 06 OCT 1987" name="og:description">
 
-  <link rel="stylesheet" href="age.css" />
-  <link rel="stylesheet" href="lifeof.css" />
+  <meta name="author" content="Ayumi Akutagawa">
+
+  <!--Icons-->
+  <link rel="icon" href="icon/favicon.png" type="image/png">
+  <link rel="icon" href="icon/android.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="icon/ios.png" sizes="180x180" type="image/png">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://akutagawaayumi.github.io/" property="og:url">
+  <meta content="https://akutagawaayumi.github.io/icon/card.png" property="og:image">
+  <meta content="https://akutagawaayumi.github.io/icon/card.png" name="twitter:image:src">
+
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="css/whois.css" />
+  <link rel="stylesheet" href="css/lifeof.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
-
-  <style>
-
-  :root {
-    --Age-Font: 'DM Mono', monospace;
-    --Name-Font: "Papyrus", cursive;
-    --Date-Font: 'Times New Roman', serif;
-    --lifeOf-Font: -apple-system, 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
-    --lifeOf-Font-Size: 0.75rem;
-    --lifeOf-Padding: 0.5rem;
-    --lifeOf-list: "a‿a" inside;
-  }
-
-  #readme {
-    padding: 2vw;
-    font-size: 2vw;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-family: monospace;
-  }
-
-  #links {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.25rem;
-    font-family: 'DM Mono', monospace;
-    padding: 1rem;
-  }
-
-  .countdown {
-    color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 1rem 1.5rem;
-    height: 1.5rem;
-    width: 6.75rem;
-    text-decoration: none;
-  }
-  </style>
 </head>
 
 <body>
-  <main id="yourage">
-    <b id="name"></b>
-    <i>
-      <span id="day"></span>
-      <span id="month"></span>
-      <span id="year"></span>
-    </i>
-    <h1 id="age"></h1>
+  <main id="whois">
+    <h1 id="age">a‿a</h1>
+    <h2 id="data">
+      <span id="author">Ayumi Akutagawa</span>
+      <time datetime="1987-10-06T00:00:00">06 OCT 1987</time>
+    </h2>
   </main>
-  <ul id="lifeOf"></ul>
-  <script src="lifeof.js"></script>
-
-  <p id="links"><a class="countdown" href="countdown/"></a></p>
-  <script src="https://unpkg.com/ityped@1.0.3"></script>
+  <footer>
+    <ol id="lifeOf" reversed></ol>
+  </footer>
+  <script src="js/whois.js"></script>
+  <script src="js/lifeof.js"></script>
   <script>
-  ityped.init(document.querySelector(".countdown"), {
-    strings: [
-      'Countdown'
-    ],
-    typeSpeed:  300,            //タイピングのスピード
-    startDelay: 300,             //タイピングが始まるまでの時間
-    loop: true,                  //繰り返しの有無（ true か false で指定）
-    showCursor: false,           //カーソル表示の有無（ true か false で指定）
-    cursorChar: "|",             //カーソルとして表示させる文字を" "内に指定
-    disableBackTyping: false,    //文字を消していく動作の有無（ true か false で指定）
-    backSpeed:  300,              //文字が消えていくときのスピード
-    backDelay:  300,             //タイピングが終わって消え始めるまでの時間
-    placeholder: false,          //プレースホルダーでのアニメーション（ true か false で指定）
-  })
+    window.onload = () => {
+      indexJson('index.json')
+    };
   </script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-  function getRgba() {
-    var clr = 'rgba(';
-    for (i = 0; i < 3; i++) {
-      clr = clr + Math.floor(Math.random() * 255) + ',';
-    }
-    clr = clr + 1 + Math.floor(Math.random() * 10) / 10 + ')';
-    return clr;
-  }
-
-  $(function() {
-
-    jQuery('.countdown').css({
-      'background': getRgba()
-    });
-
-    $('.countdown').hover(function () {
-      $(this).css({
-        'background': getRgba()
-      });
-    }, function () {
-      $(this).css({
-        'background': getRgba()
-      });
-    });
-  });
-</script>
-
 </body>
 
 </html>

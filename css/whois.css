@@ -1,0 +1,45 @@
+#whois {
+    font-size: 100%;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 5.5rem);
+    max-height: 100vw;
+}
+
+#whois #age,
+#whois #data {
+    position: absolute;
+}
+
+#whois #age {
+    font-size: 300%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#whois #data {
+    font-size: 111%;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin: 0;
+    left: 0;
+    right: 0;
+}
+
+#whois #data #author::before,
+#whois #data time::before {
+    display: block;
+    font-size: 75%;
+}
+
+@media screen and (max-width: 750px) {
+    #whois #age {
+        font-size: 7.5vw;
+    }
+}

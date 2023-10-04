@@ -1,0 +1,82 @@
+html {
+    font-size: 14px;
+}
+
+#data {
+    top: 0;
+}
+
+#lifeOf li p.lifeof {
+    font-size: 100%;
+}
+
+#lifeOf li p small {
+    font-size: 50%;
+}
+
+#lifeOf li p b {
+    font-size: 150%;
+    font-weight: 500;
+}
+
+#lifeOf li p strong {
+    font-size: 175%;
+    font-weight: 500;
+}
+
+#data #author {
+    font-family: "Papyrus", cursive;
+}
+
+#lifeOf li p {
+    font-family: "Toppan Bunkyu Gothic", "凸版文久ゴシック", serif;
+    color: #000;
+    font-size: 120%;
+}
+
+#age,
+#lifeOf li p u {
+    font-family: 'DM Mono', monospace;
+}
+
+#data time,
+#lifeOf li p i {
+    font-family: 'Times New Roman', 'times', serif;
+}
+
+@font-face {
+    font-family: "San Francisco";
+    src: url("icon/font/Compact-Text-Regular.otf"),
+        url("icon/font/UI-Display-Regular.otf");
+}
+
+#data #author,
+#data time::before {
+    font-family: -apple-system, 'BlinkMacSystemFont', 'San Francisco', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
+}
+
+#data #author::before {
+    content: 'a‿a';
+}
+
+#data time::before {
+    content: 'Date of Birth';
+}
+
+#lifeOf li p i::after {
+    content: 'years old';
+    display: inline-block;
+    font-style: normal;
+    font-size: 75%;
+    margin-left: 0.75rem;
+}
+
+#lifeOf {
+    column-rule: 1px dotted #000;
+}
+
+#lifeOf li p u {
+    border: 1px solid;
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+}
