@@ -1,10 +1,4 @@
 @font-face {
-    font-family: "BlinkMacSystemFont";
-    src: url("font/BlinkMacSystemFont-Regular.woff"),
-        url("font/BlinkMacSystemFont-Regular.woff2");
-}
-
-@font-face {
     font-family: "San Francisco";
     src: url("font/Compact-Text-Regular.otf"),
         url("font/UI-Display-Regular.otf");

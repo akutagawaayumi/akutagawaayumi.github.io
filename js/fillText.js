@@ -14,7 +14,7 @@ function canvasIcons() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             // テキストのスタイル付け
-            ctx.font = `${x * 1}px 'BlinkMacSystemFont', sans-serif`;
+            ctx.font = `${x * 1}px 'San Francisco', sans-serif`;
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillStyle = '#000';
