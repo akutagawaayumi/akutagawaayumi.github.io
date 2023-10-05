@@ -1,16 +1,72 @@
 'use strict'
 
-const date_of_birth = document.querySelector('#data time').getAttribute("datetime")
+async function whoisJson(requestURL) {
+  const request = new Request(requestURL);
+  const response = await fetch(request);
+  const jsonIndex = await response.text();
 
-function counter() {
-    const age = document.querySelector("#age");
-    age.textContent = ((new Date() - new Date(date_of_birth)) / 31557600000).toFixed(9);
+  const index = JSON.parse(jsonIndex);
+  whois(index);
+  lifeof(index);
 }
 
-function start() {
-    setTimeout(() => {
-        counter();
-        requestAnimationFrame(start);
-    }, 1000 / 30);
+function whois(obj) {
+  const yourname = document.querySelector('meta[name="author"]').getAttribute("content")
+
+  const author = document.querySelector('#author')
+  author.textContent = yourname;
+
+  const date_of_birth = obj.date_of_birth;
+  const datetime = obj.datetime;
+  
+  let thisYear = new Date().getFullYear();
+  let thisAge = ((new Date() - new Date(datetime)) / 31557600000).toFixed(0);
+
+  const birth = document.querySelector("#data time");
+  const age = document.querySelector("#age");
+  birth.textContent = date_of_birth;
+
+  function counter() {
+    age.textContent = ((new Date() - new Date(datetime)) / 31557600000).toFixed(9);
+  }
+
+  function start() {
+    setTimeout(() => { counter(); requestAnimationFrame(start); }, 1000 / 30);
+  }
+
+  start()
+
+  const lifeof = document.querySelector('#lifeOf');
+  for (let i = 0; i <= thisAge; i++) {
+    const eachAge = document.createElement('li');
+    eachAge.setAttribute('data-year', thisYear - i);
+    lifeof.appendChild(eachAge);
+    if (i == thisAge) {
+      eachAge.innerHTML = `
+      <p>
+      <i>0</i>
+      <u>${thisYear - i}</u>
+      </p>
+      `;
+
+    } else {
+      eachAge.innerHTML = `
+      <p>
+      <i>${thisAge - i - 1} ~ ${thisAge - i}</i>
+      <u>${thisYear - i}</u>
+      </p>
+      `;
+    }
+  }
 }
-start()
+
+function lifeof(obj) {
+  const contentAll = obj.contents;
+
+  for (const content of contentAll) {
+    const yearOf = document.querySelector(`li[data-year="${content.year}"]`);
+    const thisLife = document.createElement('p');
+    thisLife.innerHTML = content.html;
+    yearOf.appendChild(thisLife);
+  }
+}

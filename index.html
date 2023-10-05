@@ -5,6 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
+  <script src="js/whois.js"></script>
+  <script>
+    whoisJson('index.json')
+  </script>
 
   <!--og:meta-->
   <meta content="website" property="og:type">
@@ -38,20 +42,13 @@
   <main id="whois">
     <h1 id="age">a‿a</h1>
     <h2 id="data">
-      <span id="author">Ayumi Akutagawa</span>
-      <time datetime="1987-10-06T00:00:00">06 OCT 1987</time>
+      <span id="author" class="name">WHOIS</span>
+      <time>DD MMM YYYY</time>
     </h2>
   </main>
   <footer>
     <ol id="lifeOf" reversed></ol>
   </footer>
-  <script src="js/whois.js"></script>
-  <script src="js/lifeof.js"></script>
-  <script>
-    window.onload = () => {
-      indexJson('index.json')
-    };
-  </script>
 </body>
 
 </html>
