@@ -2,7 +2,7 @@
     font-size: 100%;
     position: relative;
     width: 100%;
-    height: calc(100vh - 5.5rem);
+    height: 100vh;
     max-height: 100vw;
 }
 
@@ -11,19 +11,35 @@
     position: absolute;
 }
 
-#whois #age {
-    font-size: 300%;
+#whois #age,
+#whois h3 {
     padding: 0;
     margin: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
 }
 
+#whois #age {
+    font-size: 300%;
+    top: 50%;
+    left: 50%;
+}
+
+#whois h3 {
+    border: 0.1rem solid;
+    border-radius: 50%;
+    padding: 0.25rem 1rem;
+    top: 75%;
+    left: 50%;
+}
+
+#whois h3,
 #whois #data {
     font-size: 111%;
     font-weight: 500;
+}
+
+#whois #data {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;

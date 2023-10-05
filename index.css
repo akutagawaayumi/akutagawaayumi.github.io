@@ -24,10 +24,6 @@ html {
     font-weight: 500;
 }
 
-#data #author {
-    font-family: "Papyrus", cursive;
-}
-
 #lifeOf li p {
     font-family: "Toppan Bunkyu Gothic", "凸版文久ゴシック", serif;
     color: #000;
@@ -45,7 +41,8 @@ html {
 }
 
 #data #author,
-#data time::before {
+#data time::before,
+#whois h3 {
     font-family: -apple-system, 'BlinkMacSystemFont', 'San Francisco', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
 }
 
