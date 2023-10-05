@@ -37,7 +37,7 @@ function whois(obj) {
   if (thisMonth === month & thisDate == date) {
     const whois = document.querySelector("#whois");
     const h3 = document.createElement("h3");
-    h3.innerHTML = "<a href='https://the-best-items.com/'>It's My Birthday</a>";
+    h3.innerHTML = "It's My Birthday";
     whois.appendChild(h3);
   }
 

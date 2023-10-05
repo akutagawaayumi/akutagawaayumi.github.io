@@ -8,6 +8,13 @@
   <script src="js/whois.js"></script>
   <script>
     whoisJson('index.json')
+
+    window.addEventListener("load", () => {
+      let h3 = document.querySelector("#whois h3");
+      h3.addEventListener('click', () => {
+        location.assign('https://the-best-items.com/')
+      });
+    });
   </script>
 
   <!--og:meta-->
@@ -31,9 +38,9 @@
   <meta content="https://akutagawaayumi.github.io/icon/card.png" name="twitter:image:src">
 
   <link rel="stylesheet" href="icon/style.css" />
-  <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="css/whois.css" />
   <link rel="stylesheet" href="css/lifeof.css" />
+  <link rel="stylesheet" href="index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">

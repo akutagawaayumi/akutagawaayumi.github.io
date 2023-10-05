@@ -30,8 +30,8 @@ html {
     font-size: 120%;
 }
 
-#whois h3 a {
-    border: 0.1rem solid;
+#whois h3 {
+    border: 0.2rem solid;
     border-radius: 50%;
     color: #000;
     padding: 0.25rem 1rem;
