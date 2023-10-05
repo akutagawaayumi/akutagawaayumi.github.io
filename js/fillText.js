@@ -14,13 +14,13 @@ function canvasIcons() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             // テキストのスタイル付け
-            ctx.font = `${x * 1}px 'San Francisco', sans-serif`;
+            ctx.font = `${x * 1}px 'BlinkMacSystemFont', sans-serif`;
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
             ctx.fillStyle = '#000';
 
             // 入力欄のテキストを塗りつぶして描画
-            ctx.fillText(text.value, x, y / 1.11, x * 1.55);
+            ctx.fillText(text.value, x, y / 1.11, x * 1.11);
         }
     }
 }

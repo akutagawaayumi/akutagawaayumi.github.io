@@ -44,12 +44,6 @@ html {
     font-family: 'Times New Roman', 'times', serif;
 }
 
-@font-face {
-    font-family: "San Francisco";
-    src: url("icon/font/Compact-Text-Regular.otf"),
-        url("icon/font/UI-Display-Regular.otf");
-}
-
 #data #author,
 #data time::before {
     font-family: -apple-system, 'BlinkMacSystemFont', 'San Francisco', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
