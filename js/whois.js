@@ -19,10 +19,11 @@ function whois(obj) {
   const date_of_birth = obj.date_of_birth;
   const datetime = obj.datetime;
 
-  let thisYear = new Date().getFullYear();
-  let thisMonth = new Date().getMonth();
-  let thisDate = new Date().getDate();
-  let thisAge = ((new Date() - new Date(datetime)) / 31557600000).toFixed(0);
+  let jst = new Date().toLocaleString({ timeZone: 'Asia/Tokyo' });
+  let thisYear = new Date(jst).getFullYear();
+  let thisMonth = new Date(jst).getMonth();
+  let thisDate = new Date(jst).getDate();
+  let thisAge = ((new Date(jst) - new Date(datetime)) / 31557600000).toFixed(0);
 
   const birth = document.querySelector("#data time");
   const age = document.querySelector("#age");
@@ -36,7 +37,7 @@ function whois(obj) {
   if (thisMonth === month & thisDate == date) {
     const whois = document.querySelector("#whois");
     const h3 = document.createElement("h3");
-    h3.textContent = "It's My Birthday";
+    h3.innerHTML = "<a href='https://the-best-items.com/'>It's My Birthday</a>";
     whois.appendChild(h3);
   }
 
