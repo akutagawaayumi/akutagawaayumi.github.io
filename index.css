@@ -2,10 +2,6 @@ html {
     font-size: 14px;
 }
 
-#data {
-    top: 0;
-}
-
 #lifeOf li p.lifeof {
     font-size: 100%;
 }
@@ -38,28 +34,24 @@ html {
     text-decoration: none;
 }
 
-#age,
+.age,
 #lifeOf li p u {
     font-family: 'DM Mono', monospace;
 }
 
-#data time,
+.data time,
 #lifeOf li p i {
     font-family: 'Times New Roman', 'times', serif;
 }
 
-#data #author,
-#data time::before,
+.data span,
+.data time::before,
 #whois h3 {
     font-family: -apple-system, 'BlinkMacSystemFont', 'San Francisco', 'Hiragino Kaku Gothic ProN', 'メイリオ', Sans-Serif;
 }
 
-#data #author::before {
+.data span::before {
     content: 'a‿a';
-}
-
-#data time::before {
-    content: 'Date of Birth';
 }
 
 #lifeOf li p i::after {
