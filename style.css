@@ -11,7 +11,7 @@ body {
 #whois,
 #lifeOf,
 footer {
-    filter: invert();
+    filter: invert() contrast(2);
     mix-blend-mode: difference;
 }
 
