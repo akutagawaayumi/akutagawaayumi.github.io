@@ -3,34 +3,29 @@ html {
     height: -webkit-fill-available;
 }
 
-body {
-    background-attachment: fixed;
+#whois {
     background-position: center;
-    width: 100%;
-    height: 100vh;
-    max-height: -webkit-fill-available;
+    margin-bottom: 1rem;
 }
 
 @media (orientation: landscape) {
-    body {
+    #whois {
         background-size: contain;
         background-position: center;
     }
 }
 
 @media (orientation: portrait) {
-    body {
+    #whois {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
 }
 
-#whois,
-#lifeOf,
-footer {
+#whois h1,
+#whois h2 {
     filter: invert() contrast(2);
-    mix-blend-mode: difference;
 }
 
 a {

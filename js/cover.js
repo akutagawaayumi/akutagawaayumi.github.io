@@ -28,5 +28,5 @@ document.addEventListener('DOMContentLoaded', function () {
   for (const icon of icons) {
     icon.href = src[0]
   }
-  document.body.style.backgroundImage = `url(${src[0]})`
+  document.querySelector("#whois").style.backgroundImage = `url(${src[0]})`
 });
