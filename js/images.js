@@ -11,7 +11,7 @@ function shuffle(arrays) {
 
 document.addEventListener('DOMContentLoaded', function () {
   const src = shuffle(images)
-  const icons = document.querySelectorAll('#android, #ios, #ogImg, #twitterImg');
+  const icons = document.querySelectorAll('#ogImg, #twitterImg');
   for (const icon of icons) {
     icon.href = src[0]
   }
