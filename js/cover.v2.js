@@ -28,5 +28,21 @@ document.addEventListener('DOMContentLoaded', function () {
   for (const icon of icons) {
     icon.href = src[0]
   }
-  document.querySelector("#whois").style.backgroundImage = `url(${src[0]})`
+
+  function randomImg(randomArray) {
+    var random =
+      randomArray[Math.floor(Math.random() * randomArray.length)];
+    return random;
+  }
+  
+  const whois = document.querySelector("#whois")
+  function randomBG() {
+    whois.style.backgroundImage = `url(${randomImg(images)})`
+  }
+  
+  window.setInterval(function () {
+    randomBG();
+  }, 2500);
+
+  randomBG();
 });

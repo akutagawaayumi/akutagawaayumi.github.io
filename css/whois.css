@@ -7,6 +7,7 @@ body,
 
 #whois {
     position: relative;
+    transition: 1s;
 }
 
 .age,
