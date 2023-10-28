@@ -9,7 +9,8 @@ body {
 }
 
 #whois,
-#lifeOf {
+#lifeOf,
+footer {
     filter: invert();
     mix-blend-mode: difference;
 }
@@ -86,4 +87,9 @@ a {
     border: 1px solid;
     border-radius: 1rem;
     padding: 0.25rem 0.5rem;
+}
+
+footer {
+    font-size: 125%;
+    padding: 1rem;
 }
