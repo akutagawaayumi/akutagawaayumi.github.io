@@ -2,6 +2,22 @@ html {
     font-size: 14px;
 }
 
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#whois,
+#lifeOf {
+    filter: invert();
+    mix-blend-mode: difference;
+}
+
+a {
+    color: #000;
+}
+
 #lifeOf li p.lifeof {
     font-size: 100%;
 }

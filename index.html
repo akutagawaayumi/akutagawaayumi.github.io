@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
   <script src="js/whois.js"></script>
+  <script src="js/icon.js"></script>
   <script>
     whoisJson('index.json')
   </script>
@@ -18,13 +19,15 @@
   <meta content="date of birth 06 OCT 1987" name="og:description">
 
   <meta name="author" content="Ayumi Akutagawa">
-  <link rel="icon" href="icon/favicon.png" type="image/png">
+  <link id="favicon" rel="icon" href="icon/favicon.png" type="image/png">
+  <link id="android" rel="icon" href="logo/icon.jpg" sizes="192x192">
+  <link id="ios" rel="apple-touch-icon-precomposed" href="logo/icon.jpg" sizes="180x180">
 
   <!--for Twitter-->
   <meta content="summary_large_image" name="twitter:card">
   <meta content="https://akutagawaayumi.github.io/" property="og:url">
-  <meta content="https://akutagawaayumi.github.io/icon/card.png" property="og:image">
-  <meta content="https://akutagawaayumi.github.io/icon/card.png" name="twitter:image:src">
+  <meta id="ogImg" content="https://akutagawaayumi.github.io/icon/card.png" property="og:image">
+  <meta id="twitterImg" content="https://akutagawaayumi.github.io/icon/card.png" name="twitter:image:src">
 
   <link rel="stylesheet" href="css/whois.css" />
   <link rel="stylesheet" href="index.css" />
