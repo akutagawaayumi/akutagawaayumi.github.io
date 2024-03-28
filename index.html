@@ -5,8 +5,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="format-detection" content="telephone=no" />
-  <script src="js/whois.js"></script>
+  <script src="whois/index.js"></script>
   <script>
+    whoisJson('whois/index.json');
     let images = [
       "https://lh3.googleusercontent.com/pw/ADCreHcTzRz_3OCIF4aWaJjG23HDYGDAuZPqt7pdee4RYjGETu4eeJGElYvTE6FRZAHvpLIHzAKYrHnEdhNNKv0SgWTewS-z9vRMZB6MG5nL8grhWRDZ4nd9bL9d3yQEikC0FJO7jTD5dXbA3npJzpFqBTId=w1081-h811-s-no-gm?authuser=0",
       "https://lh3.googleusercontent.com/pw/ADCreHc4Y-DTC_gjTO8Z5Qjrbt6uVGsI5Ne816r0ediakmsXuxvTgrFzMe1u14nRb_BmiwJDEvYiFgWaQM4vuTKZXMZBy66spCwhwflOwEb-gUrnSiF0B2OLUlLpe7-Q2xo1dLnanAlXRIlA3Z1GiD1E7n14=w1081-h811-s-no-gm?authuser=0",
@@ -18,11 +19,9 @@
       "https://lh3.googleusercontent.com/pw/ADCreHeYCYrk0O_TOgt3L0JS6duqqYGJkG4VsvULptW4pPEOYQpdP9UCycXuJ6NOlo1yIZw-hJe8J7gVFnBK_wbMrSISkAhaMjdJ_xuIIVozgcPJ4H7jy-yzN1i-3HLP9Y-5YsvSe_bFpURNFIgyAux-MQ9p=w608-h811-s-no-gm?authuser=0",
       "https://lh3.googleusercontent.com/pw/ADCreHcNXIu-LdS3ygKRp5txQcnORl0QOHnFz67veRPZrf8IEx6datqYdeBLf91JKUszdQ5wznn0H4bhYPBhrzKC5LbnN3ia_i4-URhdU8_2VOwR1W08Ybu_4Ybjd3Tdvf9XMcRQtcxAyIWuw-_QZFXLHwcG=w608-h811-s-no-gm?authuser=0",
       "https://lh3.googleusercontent.com/pw/ADCreHfGoogOU_HYaihdbMzGQMyncki8AKQ2liOU-Z2vewf7hfE4f1yHWOthjcSgZXPKZf46aqzv2sORS0H6V21BRXzgrJw5sHKziGIDCi80C6s5OaNMDbMckd7KVyAE_AHNOMZ_CUC0BfEQwvXTbOyaS_Xs=w608-h811-s-no-gm?authuser=0",
-    ]
-    
-    whoisJson('index.json')
+    ];
   </script>
-  <script src="js/images.js"></script>
+  <script src="images.js"></script>
 
   <!--og:meta-->
   <meta content="website" property="og:type">
@@ -32,6 +31,8 @@
   <meta content="date of birth 06 OCT 1987" name="og:description">
 
   <meta name="author" content="Ayumi Akutagawa">
+  <meta name="reply-to" content="abi.the.best.items@gmail.com">
+
   <link id="favicon" rel="icon" href="icon/favicon.png" type="image/png">
   <link id="android" rel="icon" href="icon/android.png" sizes="192x192">
   <link id="ios" rel="apple-touch-icon-precomposed" href="icon/ios.png" sizes="180x180">
@@ -42,8 +43,8 @@
   <meta id="ogImg" content="https://akutagawaayumi.github.io/icon/card.png" property="og:image">
   <meta id="twitterImg" content="https://akutagawaayumi.github.io/icon/card.png" name="twitter:image:src">
 
-  <link rel="stylesheet" href="css/whois.css" />
-  <link rel="stylesheet" href="style.v5.css" />
+  <link rel="stylesheet" href="whois/style.css" />
+  <link rel="stylesheet" href="style.v6.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
@@ -57,7 +58,9 @@
       <time>DD MMM YYYY</time>
     </h2>
   </main>
+
   <ol id="lifeOf" reversed></ol>
+
   <footer>
     I am a Owner of
     <a href="https://the-best-items.com/" target="_blank">the-best-items.com</a>
