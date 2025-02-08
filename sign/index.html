@@ -47,7 +47,10 @@
 
 <body>
   <header>
-    <input id="saveImg" type="button" value="Create IMG">
+    <nav>
+      <input id="saveImg" type="button" value="Create IMG">
+      <input id="download" type="button" onclick="downloadIMG()" value="Download" hidden>
+    </nav>
     <input onclick="window.location.reload()" type="button" value="Reset">
   </header>
 
@@ -58,7 +61,7 @@
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./sketch.js"></script>
-  <script src="./createIMG.js"></script>
+  <script src="./download.js"></script>
 
   <script>
     // work with sketch.js

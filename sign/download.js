@@ -3,7 +3,7 @@
 const createBtn = document.querySelector("#saveImg");
 
 function chengeMain() {
-  document.querySelectorAll("main").forEach((eachMain) => {
+  document.querySelectorAll("main, #download").forEach((eachMain) => {
     if (eachMain.hidden == false) {
       eachMain.hidden = true;
     } else {
@@ -23,6 +23,14 @@ const open = () => {
   const yourSign = document.querySelector("#yourSign")
   yourSign.src = yourImg;
   chengeMain();
+};
+
+function downloadIMG() {
+  let yourImg = document.querySelector("#sketch canvas");
+  let link = document.createElement("a");
+  link.href = yourImg.toDataURL("image/png");
+  link.download = new Date().valueOf() + ".png";
+  link.click();
 };
 
 let sign = false;
