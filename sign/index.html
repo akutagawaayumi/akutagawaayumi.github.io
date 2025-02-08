@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../icon/favicon.png" />
+
+  <title>a‿a</title>
+  <meta content="署名 |Signature" name="description">
+
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+
+    main {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100dvh;
+      z-index: 0;
+    }
+
+    main img {
+      width: 100%;
+      height: 100%;
+    }
+
+    input {
+      appearance: none;
+      border: solid 1px;
+      border-radius: 2rem;
+      background-color: #fff;
+      color: #000;
+      outline: none;
+      font-size: 1.23rem;
+      padding: 0.25rem 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <input id="saveImg" type="button" value="Create IMG">
+    <input onclick="window.location.reload()" type="button" value="Reset">
+  </header>
+
+  <main id="sketch"></main>
+  <main id="createImg" hidden>
+    <img id="yourSign">
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./sketch.js"></script>
+  <script src="./createIMG.js"></script>
+
+  <script>
+    // work with sketch.js
+    let hex = ['#111'];
+    let radius = 0;
+
+    Sketch.create({
+      container: document.getElementById('sketch'),
+      autoclear: false,
+      retina: 'auto',
+
+      setup: function () {
+        console.log('setup')
+      },
+      update: function () {
+        radius = 2 + abs(sin(this.millis * 0.002) * 25)
+      },
+
+      touchmove: function () {
+        for (let i = this.touches.length - 1, touch; i >= 0; i--) {
+          touch = this.touches[i];
+          this.lineCap = 'round';
+          this.lineJoin = 'round';
+          this.fillStyle = this.strokeStyle = hex[i % hex.length];
+          this.lineWidth = radius;
+
+          this.beginPath()
+          this.moveTo(touch.ox, touch.oy)
+          this.lineTo(touch.x, touch.y)
+          this.stroke()
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
